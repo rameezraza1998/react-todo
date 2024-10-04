@@ -1,0 +1,142 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  #root {
+    width: 100%;
+  }
+  
+  .container {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the input field and button */
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    width: 70%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-input:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-btn {
+    padding: 12px 25px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-btn:hover {
+    background-color: #a777e3;
+    transform: scale(1.05);
+  }
+  
+  /* Styling for the list */
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: left;
+  }
+  
+  li {
+    background-color: #f4f4f9;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  li:hover {
+    background-color: #e6f0ff;
+  }
+  
+  li button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+  }
+  
+  li .edit-btn {
+    background-color: #ffa502;
+  }
+  
+  li .edit-btn:hover {
+    background-color: #eccc68;
+  }
+  
+  /* Styling for the empty state message */
+  p {
+    color: #555;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
